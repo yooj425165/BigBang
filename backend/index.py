@@ -4,4 +4,7 @@ import mysql.connector as mq
 
 app = FastAPI()
 
+@app.get("/")
+def index_get():
+    return {"message" : "hello"}
 
